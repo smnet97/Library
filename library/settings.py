@@ -27,8 +27,14 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+DEBUG = env('DEBUG')
 
+ALLOWED_HOSTS = [
+    'id.napa.uz',
+    '127.0.0.1',
+    '192.168.13.194'
+]
 
 # Application definition
 

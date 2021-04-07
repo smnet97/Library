@@ -5,19 +5,19 @@ from .models import Book, LibUser, RentBook
 
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
-        models = Book
+        model = Book
         fields = '__all__'
 
 
 class LibUserSerializer(serializers.ModelSerializer):
 
     class Meta:
-        models = LibUser
+        model = LibUser
         fields = '__all__'
 
 
 class RentBookSerializer(serializers.ModelSerializer):
 
     class Meta:
-        models = RentBook
+        model = RentBook
         fields = '__all__'
